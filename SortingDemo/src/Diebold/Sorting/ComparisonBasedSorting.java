@@ -1,7 +1,5 @@
 package Diebold.Sorting;
 
-import java.util.Collections;
-
 public class ComparisonBasedSorting extends SortingBase{
 	
 	public ComparisonBasedSorting()
@@ -34,7 +32,6 @@ public class ComparisonBasedSorting extends SortingBase{
 	 */
 	public void selectionSort()
 	{
-		
 		for(int i = 0; i < arr.length-1; i++)
 		{
 			 int min = i;
@@ -48,8 +45,6 @@ public class ComparisonBasedSorting extends SortingBase{
 			arr[min] = arr[i];
 			arr[i] = temp;
 		}
-		
-		
 	}
 	public void bubbleSort()
 	{
