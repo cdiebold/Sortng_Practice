@@ -1,4 +1,4 @@
-
+package Diebold.Sorting;
 public class ComparisonBasedSorting extends SortingBase{
 	
 	public ComparisonBasedSorting()

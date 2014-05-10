@@ -1,4 +1,4 @@
-
+package Diebold.Sorting;
 public abstract class SortingBase {
 	protected int [] arr;
 	protected int size;
