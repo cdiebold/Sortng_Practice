@@ -21,5 +21,6 @@ Class Description:
 Things I may add:
 
 -- May include a custom Linked list class and test the sorting algorithms on a linked list. 
+
 -- GUI. --may be good practice. If I do it will be using Javafx.
 
