@@ -16,10 +16,10 @@ Class Description:
 
 -- DistributionBasedSorting: Noncomparison based sorting like countingSort. 
 
---All the above with the exception of the abstract class have an associated test class. 
+-- All the above with the exception of the abstract class have an associated test class. 
 
 Things I may add:
 
--- May include a ustom Linked list class and test the sorting algorithms on a linked list. 
+-- May include a custom Linked list class and test the sorting algorithms on a linked list. 
 -- GUI. --may be good practice. If I do it will be using Javafx.
 
