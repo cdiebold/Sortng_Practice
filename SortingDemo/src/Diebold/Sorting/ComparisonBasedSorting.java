@@ -11,7 +11,7 @@ public class ComparisonBasedSorting extends SortingBase{
 		super(size);
 	}
 	
-	protected int getSize()
+	public int getSize()
 	{
 		return size;
 	}
@@ -22,6 +22,17 @@ public class ComparisonBasedSorting extends SortingBase{
 	
 	public void insertionSort()
 	{
+		for(int i = 1; i < this.getSize(); i++)
+		{
+			int temp = arr[i];
+			int j;
+			for(j = i -1; j >= 0 && temp < arr[j]; j--)
+			{
+				arr[j+1] = arr[j];
+				
+			}
+			arr[j+1] = temp;
+		}
 		
 	}
 	/**
@@ -48,6 +59,19 @@ public class ComparisonBasedSorting extends SortingBase{
 	}
 	public void bubbleSort()
 	{
+		for(int pass = this.getSize()-1; pass >= 0; pass--)
+		{
+			for(int i = 0; i < pass -1; i++)
+			{
+				if(arr[i] > arr[i+1]){
+					//swap
+					int temp = arr[i];
+					arr[i] = arr[i+1];
+					arr[i+1] = temp;
+					
+				}
+			}
+		}
 		
 	}
 
@@ -56,7 +80,7 @@ public class ComparisonBasedSorting extends SortingBase{
 		ComparisonBasedSorting s = new ComparisonBasedSorting(25);
 		s.print();
 		System.out.println();
-		s.selectionSort();
+		s.insertionSort();
 		s.print();
 
 	}

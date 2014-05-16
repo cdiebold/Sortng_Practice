@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import Diebold.Sorting.ComparisonBasedSorting;
-import junit.framework.TestCase;
 @RunWith(ExtendedRunner.class)
 public class ComparisonBasedSortingTest{
 	ComparisonBasedSorting s;
@@ -43,7 +42,7 @@ public class ComparisonBasedSortingTest{
 	}
 	@Before
 	public void setUp() throws Exception {
-		s = new ComparisonBasedSorting(1000);
+		s = new ComparisonBasedSorting(10000);
 	}
 	
 	@Test
@@ -59,11 +58,23 @@ public class ComparisonBasedSortingTest{
 	public void selectionSortTest()
 	{
 		s.selectionSort();
-		//ComparisonBasedSorting s = new ComparisonBasedSorting(100);
 		int [] a = s.getArray();
 		assertTrue(isSorted(a));
-		
-		
+	}
+	
+	@Test
+	@Repeat(100)
+	public void insertionSortTest(){
+		s.insertionSort();
+		int[] a = s.getArray();
+		assertTrue(isSorted(a));
+	}
+	@Test
+	@Repeat(100)
+	public void bubbleSortTest(){
+		s.bubbleSort();
+		int[] a = s.getArray();
+		assertTrue(isSorted(a));
 	}
 	
 

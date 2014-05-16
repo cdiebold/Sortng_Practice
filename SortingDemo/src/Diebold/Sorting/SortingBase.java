@@ -32,7 +32,7 @@ public abstract class SortingBase {
 		return size;
 	}
 	
-	protected int[] getArray()
+	public int[] getArray()
 	{
 		return arr;
 	}
